@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>回答问题</title>
+    
+    <link href="{$_W['siteroot']}app/resource/css/ibeacon.css" rel="stylesheet">
+  </head>
+  <body>
+    <img src="{$_W['siteroot']}app/resource/img/ibeacon_top.png" height="250px" width="100%">
+    <div class="qform">
+	<input type="hidden" id="openid" value='{$openid}'>
+	<div class="question">1：我们的股票代码是？</div>
+	<input type="radio" name="stock_number" id="1_a" q="q1" value='1'>
+	<label class="answer" for="1_a" q="q1" >A:1528.HK</label>
+	<input type="radio" name="stock_number" id="1_b" q="q1" value='2'>
+	<label class="answer" for="1_b" q="q1">B:1825.HK</label>
+	<input type="radio" name="stock_number" id="1_c" q="q1" value='3'>
+	<label class="answer" for="1_c" q="q1">C:01528.HK</label>
+
+
+	<div class="question top-10">2：你知道开会睡觉最不好的是什么吗？</div>
+	<input type="radio" name="q_2" id="2_a" q="q2" value='1'>
+	<label class="answer" for="2_a" q="q2" >A:容易老得快！</label>
+	<input type="radio" name="q_2" id="2_b" q="q2" value='2'>
+	<label class="answer" for="2_b" q="q2">B:没有床上舒服！</label>
+	<input type="radio" name="q_2" id="2_c" q="q2" value='3'>
+	<label class="answer" for="2_c" q="q2">C:必须为家居帮拉粉100人！</label>
+		
+    </div>
+    <button id="ci" class="ci">提交</button>
+    <script src="{$_W['siteroot']}app/resource/js/lib/zepto.min.js"></script>
+    <script>
+       $(function() {
+        $('.answer').click(function(){
+         var radioId = $(this).attr('for');
+	 var aid = $(this).attr('q');
+         $('label[q="'+aid+'"]').removeClass('checked');
+         $(this).addClass('checked');
+         $('input[q="'+aid+'"]').removeAttr('checked') && $('#' + radioId).attr('checked', 'checked');
+      });
+	
+	$('#ci').click(function(){
+		var o = $('#openid').val();
+		var q_1 = $('[name="stock_number"]:checked').val();
+		var q_2 = $('[name="q_2"]:checked').val();
+		if(!q_1 || !q_2){
+			alert("请选择答案");
+		}
+		$.ajax(
+		{
+		   url:'./index.php?c=rsibeacon&do=ci&i=2&t=2', 
+		   data: { openid:o, q1: q_1, q2:q_2},
+	           dataType: 'json',
+                   success: function(response){ 
+		              console.log(response);
+	                      if(response.type == "success"){
+		                 location.href = response.redirect;
+	                      }
+	                   }
+		 });
+
+	});
+	
+	});
+    </script>
+  </body>
+
+</html>
