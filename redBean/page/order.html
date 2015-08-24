@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>支付订单</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+<link rel="stylesheet" type="text/css" href="../css/order.css"/>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+</head>
+<body>	
+	<div class="title"></div>
+	<form id="orderForm" method="post">
+		<table>
+			<colgroup>
+				<col style="width:28%"/>
+				<col style="width:60%"/>
+			</colgroup>
+			<tbody>
+				<tr>
+					<td><img class="card" src="../images/card.png"/></td>
+					<td class="left">
+						<h2>红星美凯龙购物卡</h2>
+						<span>(通汇卡)</span>
+					</td>
+				</tr>				
+			</tbody>	
+		</table>
+		<table class="table02">
+			<colgroup>
+				<col style="width:28%"/>
+				<col style="width:60%"/>
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>数量</th>
+					<td><input id="number" name="number" type="text" value="1" disabled/></td>
+				</tr>
+				<tr>
+					<th>金额</th>
+					<td><input id="total" name="total" type="text" value="￥500" disabled/></td>
+				</tr>
+			</tbody>
+		</table>
+		<p class="tips">现在充值<a href="#">(&nbsp;免费获得置家大礼包一份&nbsp;)</a></p>
+		<div class="payWrap">
+			<input id="pay" type="submit" value="微信支付"/>
+		</div>
+	</form>
+</body>
+</html>

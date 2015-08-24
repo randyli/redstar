@@ -1,0 +1,27 @@
+@CHARSET "UTF-8";
+body{padding:0 18px 25px;}
+.title{line-height:38px;height:38px;color:#434343;font-size:1.3em;text-align:center;border-bottom:solid 7px #f1f1f1;letter-spacing:2px;}
+#orderForm table{border-spacing:0;}
+table tr th,table tr td{border-bottom:solid 1px #dfdfdf;text-align:center;padding:8px 0 5px;}	
+table tr td img.card{width:100%;}
+table tr td h2{font-size:1.4em;font-weight:normal;margin-top:5px;color:#4d4d4d;text-align:left;position:relative;left:12px;letter-spacing:1px;top:-2px;}
+table tr td h2 label{font-size:21px;color:#d94f5a;font-weight:bold;margin-left:5px;}
+table tr td.left h2 label span{font-size:10px;color:#d94f5a;}
+table tr td.left p{font-size:14px;position:relative;left:12px;top:-6px;}
+table tr td.left span.send{display:block;position:relative;top:-8px;font-size:14px;left:12px;color:#000;font-size:14px;font-weight:bold;text-align:right;padding-right:12px;}
+table tr td.left span.send label{float:left;color:#ea4f57;font-weight:normal;font-size:14px;}
+table tr td.left{text-align:left;}
+table tr td.left span{font-size:1.2em;color:#434343;}
+table tr td.left .info{float:left;}
+table tr td.left .price{float:left;}
+	
+table.table02{margin-left:10px;width:100%;}
+table.table02 tr th,table.table02 tr td{font-weight:normal;padding:5px 0;height:32px;vertical-align:bottom;}
+table.table02 tr th{text-align:left;color:#636363;font-size:1.2em;}
+table.table02 tr td input{position:relative;top:4px;border:none;background:transparent;float:right;text-align:right;margin-right:20px;}
+table.table02 tr td input#number{font-size:1.4em;color:#141313;}
+table.table02 tr td input#total{font-size:1.7em;color:#d12734;}
+p.tips{margin-top:55px;color:#626262;font-size:1.2em;padding-left:13px;}
+p.tips a{text-decoration:none;color:#e82f3b;margin-left:4px;letter-spacing:1px;}
+.payWrap{margin:0 8px;margin-top:5px;}
+input#pay{background:#65ad01;color:#fff;font-size:1.6em;border:none;height:40px;width:100%;}

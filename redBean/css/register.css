@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+body{padding:25px 20px;}
+#registerForm div{position:relative;height:65px;line-height:40px;}
+#registerForm div .point{position:absolute;bottom:-2px;z-index:800;}
+input{letter-spacing:1px;box-sizing: border-box;padding-left:10px;width:100%;height:40px;line-height:40px;font-size:1.2em;color:#807f7f;border:solid 1px #9e9e9e;border-radius:3px;}
+input#phone{width:55.7%;margin-right:2%;}
+input#phone:focus{color:#000;font-weight:bold;}
+input#sendCode{position:relative;top:0;width:41%;text-align:center;height:39px;text-align:center;font-size:0.8em;color:#d13d54;border:solid 1px #ee5662;background:#fff;}
+input#sendCode:disabled{border:none;color:#919191;background:#e2e2e1;}	
+input#confirm{margin-top:20px;border:none;color:#fff;font-size:1.6em;line-height:30px;background:#d94543;}
+#registerForm label.error,#registerForm label.error02{position: absolute;width:auto;top:-22px;left:0;font-size:1.2em;color:#ef5764;height: 16px;line-height: 16px;padding: 2px 1px;}
