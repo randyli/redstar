@@ -4,14 +4,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <title>支付订单</title>
-<link rel="stylesheet" type="text/css" href="../css/common.css"/>
-<link rel="stylesheet" type="text/css" href="../css/order.css"/>
+<link rel="stylesheet" type="text/css" href="{$_W['siteroot']}app/resource/css/redstar/common.css"/>
+<link rel="stylesheet" type="text/css" href="{$_W['siteroot']}app/resource/css/redstar/order.css"/>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="js/jquery.validate.js"></script>
 </head>
 <body>	
 	<div class="title"></div>
-	<form id="orderForm" method="post">
+	<form id="orderForm" method="post" action="/weengine/payment/wechat/hongdoupay.php">
 		<table>
 			<colgroup>
 				<col style="width:28%"/>
@@ -19,7 +19,7 @@
 			</colgroup>
 			<tbody>
 				<tr>
-					<td><img class="card" src="../images/card.png"/></td>
+					<td><img class="card" src="{$_W['siteroot']}app/resource/images/redstar/card.png"/></td>
 					<td class="left">
 						<h2>红星美凯龙购物卡</h2>
 						<span>(通汇卡)</span>

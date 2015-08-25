@@ -1,11 +1,12 @@
 @CHARSET "UTF-8";
-body{background:#c3c4c4;}
+html{-webkit-text-size-adjust: 100%;width:100%;overflow:hidden;}
+body{position:relative;width:100%;background:#c3c4c4;overflow:hidden;min-width: 300px;max-width: 640px;margin:0 auto;}
 img{width:100%;}
-span.num{position:Absolute;display:block;width:30%;height:40px;top:36%;left:39%;text-align:Center;color:#d94d34;font-size:2.2em;font-weight:bold;}
+span.num{position:Absolute;z-index:900;display:block;width:30%;height:40px;top:22.3%;left:39%;text-align:Center;color:#d94d34;font-size:2.2em;font-weight:bold;}
 .activity02{margin-bottom:10px;}
 .link{position:absolute;top:66%;width:100%;height:7%;padding:0 22%;box-sizing: border-box;}
 /*iphone4判断*/
 @media(device-height:480px) and (-webkit-min-device-pixel-ratio:2){
-	span.num{top:42%;}
+	span.num{top:22%;}
 	.link{top:79%;}
 }

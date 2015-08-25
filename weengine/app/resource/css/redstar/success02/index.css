@@ -1,5 +1,5 @@
 @CHARSET "UTF-8";
-.msg{background:url(../../images/success/success.png) 48px center no-repeat;height:40px;line-height:18px;padding:40px 0 40px 104px;}
+.msg{background:url(../../../images/redstar/success/success.png) 48px center no-repeat;height:40px;line-height:18px;padding:40px 0 40px 104px;}
 	.msg p{font-size:17px;font-weight:bold;margin-bottom:7px;letter-spacing:2px;color:#222;}
 	.msg span{color:#a9a9a9;font-size:10px;}
 	.msg span label{color:#ff4d4d;font-size:14px;font-weight:bold;}
@@ -11,4 +11,4 @@
 	
 	.shadow{width:100%;height:100%;z-index:900;position:absolute;top:0;left:0;}
 	.shadow-bg{width:100%;height:100%;background:#000;opacity:0.56;}
-	.share{background:url(../../images/success02/share.png) center center no-repeat;width:100%;height:100%;border-radius:5px;position:absolute;top:0;left:0;}
+	.share{background:url(../../../images/redstar/success02/share.png) center center no-repeat;width:100%;height:100%;border-radius:5px;position:absolute;top:0;left:0;}
