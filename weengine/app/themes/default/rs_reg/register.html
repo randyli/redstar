@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>注册</title>
+<link rel="stylesheet" type="text/css" href="{$_W['siteroot']}app/resource/css/redstar/common.css"/>
+<link rel="stylesheet" type="text/css" href="{$_W['siteroot']}app/resource/css/redstar/register.css"/>
+<script type="text/javascript" src="{$_W['siteroot']}app/resource/js/lib/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="{$_W['siteroot']}app/resource/js/lib/jquery.validate.js"></script>
+<script type="text/javascript" src="{$_W['siteroot']}app/resource/js/app/redstar/register.js"></script>
+</head>
+<body>	
+	<form id="registerForm" method="get" action="result.html" onsubmit="return check()">
+		<div>
+			<input type="text" id="phone" name="phone" placeholder="请输入手机号码" autocomplete="off"/>
+			<input id="sendCode" type="button" value="获取短信验证码" disabled="true"/>
+			<img class="point none" src="images/point.png"/>
+		</div>
+		<div>
+			<input type="text" id="checkCode" name="checkCode" placeholder="短信验证码"/>
+			<label class="error02 none wrong">验证码错误！</label>
+		</div>
+		<input type="submit" id="confirm" value="确 定"/>
+	</form>
+</body>
+</html>
