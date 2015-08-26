@@ -31,11 +31,14 @@
                <div class="left large-font">红豆特权</div>
                <img class="right2" src="{$_W['siteroot']}app/resource/img/down.gif" width="30" height="30">
             </a>
+<?php if($is_buy) { ?>
 
-            <a href="#comming" class="row">
+          
+            <a href="{php echo url('rsactivity', array('do'=>'detail'));}" class="row">
                <div class="left">我的订单</div>
                <img class="right3" src="{$_W['siteroot']}app/resource/img/right.gif" width="10" height="14">
             </a>
+<?php } ?>
             <a  href="#comming" class="row">
                <div class="left">玩转红豆</div>
                 <img class="right3" src="{$_W['siteroot']}app/resource/img/right.gif" width="10" height="14">

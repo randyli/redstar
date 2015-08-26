@@ -18,7 +18,11 @@
 	<span class="num">200</span>
 	<a href="javascript:;" class="link"></a>
 	<img class="activity02" src="{$_W['siteroot']}app/resource/images/redstar/activity/activity02.jpg"/>
+	<?php if($is_buy) { ?>
+		<a href="javascript:alert('您已经购买过！');">	
+	<?php }else{ ?>
 	<a href="{php echo url('rsactivity//order')}">
+	<?php }?>
 		<img src="{$_W['siteroot']}app/resource/images/redstar/activity/buyNow.jpg"/></a>
 </body>
 </html>

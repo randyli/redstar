@@ -8,15 +8,28 @@
 <link rel="stylesheet" type="text/css" href="{$_W['siteroot']}app/resource/css/redstar/success02/index.css"/>
 <script type="text/javascript" src="{$_W['siteroot']}app/resource/js/lib/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="{$_W['siteroot']}app/resource/js/app/redstar/success02/index.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".know").click(function(){
+			$(".shadow").show();
+		});
+	});
+</script>
 </head>
 <body>	
-	<div class="shadow">
+	<div class="shadow none">
 		<div class="shadow-bg"></div>
-		<div class="share"></div>
+		
+		<?php if($follow) { ?>
+			<div class="share on"></div>
+		<?php }else{ ?>
+			<div class="share"></div>
+		<?php  } ?>
+
 	</div>
 	<div class="msg">
 		<p>恭喜你，支付成功！</p>
-		<span>通汇卡消费码：<label>5648793065</label></span>
+		<span>通汇卡消费码：<label>{$card}</label></span>
 	</div>
 	<p class="detail">通汇卡使用明细</p>
 	<ul class="list">

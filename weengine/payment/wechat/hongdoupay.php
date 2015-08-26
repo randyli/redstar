@@ -54,8 +54,8 @@ pdo_insert('redstar_order', $order);
 
 //②、统一下单
 $input = new WxPayUnifiedOrder();
-$input->SetBody("通汇卡（红豆大礼包）");
-$input->SetAttach("通汇卡（红豆大礼包）");
+$input->SetBody("通汇卡（置家大礼包）");
+$input->SetAttach("通汇卡（置家大礼包）");
 $input->SetOut_trade_no($order_id);
 $input->SetTotal_fee("1");
 $input->SetTime_start(date("YmdHis"));
@@ -85,7 +85,7 @@ $jsApiParameters = $tools->GetJsApiParameters($order);
 					window.history.back(-1);
 					//window.location.href = "http://hxyyhd.mmall.com/weengine/app/index.php?i=2&c=rsactivity&do=order";
 				}else if(res.err_msg == "get_brand_wcpay_request:ok") {
-					window.location.href = "http://hxyyhd.mmall.com/weengine/app/index.php?i=2&c=rsactivity&do=success&card=<?php echo $card_no;?>";
+					window.location.href = "http://hxyyhd.mmall.com/weengine/app/index.php?i=2&c=rsactivity&do=success02&card=<?php echo $card_no;?>";
 				}
 				//alert(res.err_code+res.err_desc+res.err_msg);
 			}
