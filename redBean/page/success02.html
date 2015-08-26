@@ -8,9 +8,16 @@
 <link rel="stylesheet" type="text/css" href="../css/success02/index.css"/>
 <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="../js/success02/index.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".know").click(function(){
+			$(".shadow").show();
+		});
+	});
+</script>
 </head>
 <body>	
-	<div class="shadow">
+	<div class="shadow none">
 		<div class="shadow-bg"></div>
 		<div class="share"></div>
 	</div>
