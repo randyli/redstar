@@ -10,10 +10,8 @@
 		//开发者账号信息查询默认为json或xml	
 		$ucpass->getDevinfo('xml');
 		$appId = "5c5f239bfb97495d84cce1ddf9ea1d36";
-		$to = $_POST["phone"];
 		$templateId = "10990";
 		$param="$code,2";	
-		$ucpass->templateSMS($appId,$to,$templateId,$param);
+		$ucpass->templateSMS($appId,$mobile,$templateId,$param);
 	}
-
 ?>

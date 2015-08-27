@@ -16,5 +16,5 @@ table.table02 tr td input#number{font-size:1.4em;color:#141313;}
 table.table02 tr td input#total{font-size:1.7em;color:#d12734;}
 p.tips{margin-top:55px;color:#626262;font-size:1.2em;padding-left:13px;}
 p.tips a{text-decoration:none;color:#e82f3b;margin-left:4px;letter-spacing:1px;}
-.payWrap{margin:0 8px;margin-top:5px;}
+.payWrap{margin:0 8px;margin-top:10px;}
 input#pay{background:#65ad01;color:#fff;font-size:1.6em;border:none;height:40px;width:100%;}

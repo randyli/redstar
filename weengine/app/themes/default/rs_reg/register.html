@@ -11,11 +11,12 @@
 <script type="text/javascript" src="{$_W['siteroot']}app/resource/js/app/redstar/register.js"></script>
 </head>
 <body>	
-	<form id="registerForm" method="get" action="result.html" onsubmit="return check()">
+	<form id="registerForm" method="post" action="./index.php?c=rsreg&do=reg2post&i=2&t=2" onsubmit="return check()">
 		<div>
+			<input type="hidden" id="openid" name='openid' value='{$openid}'/>
 			<input type="text" id="phone" name="phone" placeholder="请输入手机号码" autocomplete="off"/>
 			<input id="sendCode" type="button" value="获取短信验证码" disabled="true"/>
-			<img class="point none" src="images/point.png"/>
+			<img class="point none" src="{$_W['siteroot']}app/resource/images/redstar/point.png"/>
 		</div>
 		<div>
 			<input type="text" id="checkCode" name="checkCode" placeholder="短信验证码"/>

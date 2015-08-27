@@ -63,11 +63,18 @@ class PayNotifyCallBack extends WxPayNotify
 		$time_end = mysql_real_escape_string($data['time_end']);
 		$order_id = mysql_real_escape_string($data['out_trade_no']);
 
+		// 更新订单
 		$sql = "update ims_redstar_order set transaction_id='%s', status=1, time_end='%s' ";
 		$sql .= " where order_id = '%s'";
 		$sql = sprintf($sql, $transaction_id, $time_end, $order_id);
 		Log::DEBUG('order:'.$sql);
 		mysql_query($sql);
+
+		$sql = "update ims_redstar_reserve set reserve_num = reserve_num - 1";
+		Log::DEBUG('order:'.$sql);
+		mysql_query($sql);
+
+
 		mysql_close();
 		return true;
 	}

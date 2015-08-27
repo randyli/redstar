@@ -41,7 +41,7 @@ $(function(){
 			
 	$("#sendCode").click(function(){
 		var total=60,$this=$(this);			
-		$.post("/micro/redBean/checkCode.php",{phone:$("#phone").val()},function(data){
+		$.post("./index.php?i=2&c=rsreg&do=checkcode",{phone:$("#phone").val()},function(data){
 			console.log(data)
 			code=data;
 		});
